@@ -18,7 +18,7 @@ const SignUp = () => {
 
   const signupbtn = () => {
     axios
-      .post("http://localhost:8080/signup", signupdata)
+      .post("https://fresh-cart-backend-nu.vercel.app/signup", signupdata)
       .then((res) => {
         if (res.data.status) {
           Swal.fire({
